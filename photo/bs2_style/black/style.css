@@ -1,0 +1,33 @@
+BODY {
+	FONT-SIZE: 11px; COLOR: #ffffff; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif
+}
+TD {
+	FONT-SIZE: 11px; COLOR: #ffffff; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif
+}
+TH {
+	FONT-SIZE: 11px; COLOR: #ffffff; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif
+}
+BODY {
+	BACKGROUND-COLOR: #000000
+}
+A:link {
+	COLOR: #fefefe; TEXT-DECORATION: underline
+}
+A:visited {
+	COLOR: #fefefe; TEXT-DECORATION: underline
+}
+A:hover {
+	COLOR: #cecece; TEXT-DECORATION: underline
+}
+A:active {
+	COLOR: #cecece; TEXT-DECORATION: underline
+}
+.style_font {
+	FONT-WEIGHT: bold; COLOR: #FF9900
+}
+.style_table_01 {
+	BACKGROUND-COLOR: #222222
+}
+.style_table_02 {
+	BACKGROUND-COLOR: #111111
+}

@@ -1,0 +1,26 @@
+<div class="wrapper row1">
+  <header id="header" class="clear">
+    <hgroup>
+      <h1><a href="index.php">Дмитрий Монастырский</a></h1>
+      <h2>Удивительный мир вокруг нас</h2>
+    </hgroup>
+    <nav class="clear">
+      <ul class="fl_right">
+        <li <?php if ($_SERVER['PHP_SELF'] == '/index.php') echo('class="active "')?>><a href="/">Главная</a></li>
+        <li <?php if ($_SERVER['PHP_SELF'] == '/services.php') echo('class="active "')?>><a href="/services">Услуги</a></li>
+        <li><a href="/blog">Блог</a></li>
+        <li <?php if ($_SERVER['PHP_SELF'] == '/portfolio.php') echo('class="active "')?> ><a href="portfolio.php">Портфолио</a>
+          <ul>
+            <li><a href="portfolio.php?type=arch">Архитектура и интерьеры</a></li>
+            <li><a href="portfolio.php?type=report">Репортаж</a></li>
+            <li><a href="portfolio.php?type=landscape">Пейзажная фотография</a></li>
+            <li><a href="portfolio.php?type=nature">Природа</a></li>
+			<li><a href="portfolio.php?type=macro">Макросъемка</a></li>
+          </ul>
+        </li>
+        <li <?php if ($_SERVER['PHP_SELF'] == '/equipment.php') echo('class="active "')?>><a href="blog/?page_id=15">Оборудование</a></li>
+        <li <?php if ($_SERVER['PHP_SELF'] == '/about.php') echo('class="active "')?>><a href="about.php">О сайте</a></li>
+      </ul>
+    </nav>
+  </header>
+</div>

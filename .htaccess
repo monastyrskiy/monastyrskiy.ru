@@ -1,0 +1,50 @@
+# BEGIN WordPress
+
+# END WordPress
+
+RewriteEngine on
+ 
+RewriteCond %{HTTP_HOST} ^.*$
+
+RewriteRule ^category/spheres /blog/?cat=75 [R=301,L]
+RewriteRule ^category/nature /blog/?cat=7 [R=301,L]
+RewriteRule ^category/macro /blog/?cat=6 [R=301,L]
+RewriteRule ^category/report /blog/?cat=128 [R=301,L] 
+RewriteRule ^category/news /blog/?cat=3 [R=301,L]
+RewriteRule ^category/landscape /blog/?cat=5 [R=301,L] 
+
+RewriteRule ^landscape/progulka-po-mezmayu /blog/?p=814 [R=301,L]
+RewriteRule ^landscape/vesennie-zarisovki-tyoren  /blog/?p=793 [R=301,L]
+
+RewriteRule ^/news/final-zolotoj-cherepaxi /blog/?p=578 [R=301,L]
+
+RewriteRule ^nature/narzannye-vanny /blog/?p=800 [R=301,L]
+RewriteRule ^nature/kalmykiya-manych-tyulpany-den-vtoroj-prodolzhenie /blog/?p=783 [R=301,L]
+RewriteRule ^nature/leto-more-solnce-gory-abxaziya /blog/?p=658 [R=301,L]
+RewriteRule ^nature/kalmykiya-manych-tyulpany-den-pervyj /blog/?p=741" [R=301,L]
+
+RewriteRule ^macro/kalmykiya-manych-tyulpany-den-vtoroj /blog/?p=778 [R=301,L]
+
+RewriteRule ^report/chempionat-rostovskoj-oblasti-po-avtokrossu-pervyj-etap /blog/?p=788 [R=301,L] 
+RewriteRule ^report/proxozhdenie-venery-po-disku-solnca /blog/?p=491 [R=301,L] 
+
+RewriteRule ^spheres/fizicheskij-fakultet-yuzhnogo-federalnogo-universiteta /blog/?p=760 [R=301,L] 
+
+RewriteRule ^equipment.?$ /blog/?p=15 [R=301,L] 
+RewriteRule ^about.?$ /about.php [R=301,L] 
+RewriteRule ^offers.?$ /services.php [R=301,L]
+RewriteRule ^services.?$ /services.php [R=301,L]
+RewriteRule ^ostavit-otzyv.?$ /blog/?page_id=108 [R=301,L]
+
+RewriteRule ^wp-content/uploads/(.+)$ /blog/wp-content/uploads/$1 [R=301,L] 
+
+#Блокируем все ссылки, содержащие <script>
+RewriteCond %{QUERY_STRING} (\<|%3C).*script.*(\>|%3E) [NC,OR]
+#Блокируем все скрипты, которые пытаются изменить переменные PHP Globals:
+RewriteCond %{QUERY_STRING} GLOBALS(=|\[|\%[0-9A-Z]{0,2}) [OR]
+#Блокируем все скрипты, которые пытаются изменить переменную _REQUEST:
+RewriteCond %{QUERY_STRING} _REQUEST(=|\[|\%[0-9A-Z]{0,2})
+#Перенаправляем все подобные на страницу с ошибкой 403 - запрещено
+RewriteRule ^(.*)$ index.php [F,L]
+
+ErrorDocument 404 http://monastyrskiy.ru/404-error.php

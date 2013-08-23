@@ -1,0 +1,36 @@
+BODY {
+	FONT-SIZE: 12px; COLOR: #000000; FONT-FAMILY: trebuchet ms,arial,verdana,sans-serif;
+}
+TD {
+	FONT-SIZE: 12px; COLOR: #000000; FONT-FAMILY: trebuchet ms,arial,verdana,sans-serif;
+}
+TH {
+	FONT-SIZE: 12px; COLOR: #000000; FONT-FAMILY: trebuchet ms,arial,verdana,sans-serif;
+}
+BODY {
+	BACKGROUND-COLOR: #EEEEEE;
+}
+A:link {
+	COLOR: #555555; TEXT-DECORATION: underline;
+}
+A:visited {
+	COLOR: #555555; TEXT-DECORATION: underline;
+}
+A:hover {
+	COLOR: #000000; TEXT-DECORATION: underline;
+}
+A:active {
+	COLOR: #000000; TEXT-DECORATION: underline;
+}
+.style_font {
+	FONT-WEIGHT: bold; COLOR: #000000;
+}
+.style_table_01 {
+	BACKGROUND-COLOR: #C5C5C5;
+}
+.style_table_02 {
+	BACKGROUND-COLOR: #F5F5F5;
+}
+.style_table_03 {
+	BACKGROUND-COLOR: #E5E5E5;
+}
